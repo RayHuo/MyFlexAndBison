@@ -1,0 +1,4 @@
+#! /bin/bash
+
+lex -o ../src/lex.cpp scanner.l
+yacc --defines=../src/parser.h -o ../src/parser.cpp parser.y
